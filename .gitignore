@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# CODE_REVIEW: you may want to include the following line to exlude the ds_store file that's exlusive to macOS system
+# .DS_Store
