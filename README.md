@@ -7,6 +7,12 @@ Class Link: https://johnguerra.co/classes/webDevelopment_fall_2022/
 ### Background
 
 This is a web app with simple backend with Node.js, Express, Mongo, HTML5. The backend runs a Express server which talks to a remote mongoDB Atlas server. The frontend communicates with the backend Express server via route (route folder) as the entry point. 
+
+### User Story
+Jimmy went to a conference that last for a week. He received 20+ business cards per day. By the end of the week, he ended up with 100+ business cards. It was difficult for him to keep and organize all the cards. He might not need to contact these people immediately. Originally Jimmy was planning to store all the business cards in a box and keep it in a drawer at his place. Turns out the cards took too much space away from his apartments after a year. Keeping these business cards safely but also allows him to access them quickly can be difficult. He discovers the business card app and decides to give it a try.
+
+ Jason went to a career fair and connected with a lot of people on LinkedIn. They have very different background and are working in different industries. One day, he decided to start a business and wanted to reach out to some of the project managers and software engineers that he met in the expo. It is difficult to filter out people in specific field.  He started to use the business card app and added all the physical business cards into his digital collections. He found it useful to sort people by tags and finally able to reach out to the right person in a shorter amount of time.
+
 ### Installation
 To __download__ the project, simply git clone, or download the .zip file from github.
 Once downloaded to your local machine:
