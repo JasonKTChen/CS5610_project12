@@ -4,6 +4,9 @@ dotenv.config({ path: "./config/config.env" });
 function MyMongoDB() {
   const myDB = {};
   const url =
+//   CODE_REVIEW: as mentioned in class, it is not a good idea to leave username and password to database in code.
+//   It gives the hackers the chance to use crawlers to get your credentials and cause harm to your system.
+//   You can use heroku's credential configuration system to save your credentials securely.
     "mongodb+srv://jason:1234@cluster0.g3bcu3h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
   const DB_name = "businessCardDB";
