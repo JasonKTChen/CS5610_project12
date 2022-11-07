@@ -14,6 +14,7 @@ function MyMongoDB() {
 
   myDB.createCard = async (user, card) => {
     const client = new MongoClient(url);
+    client.connect();
     try {
       client.connect();
       const database = client.db(DB_name);
@@ -50,6 +51,7 @@ function MyMongoDB() {
 
   myDB.fetchingCards = async (user) => {
     const client = new MongoClient(url);
+    client.connect();
     try {
       client.connect();
       const database = client.db(DB_name);
@@ -67,6 +69,7 @@ function MyMongoDB() {
 
   myDB.deleteCard = async (id) => {
     const client = new MongoClient(url);
+    client.connect();
     try {
       const database = client.db(DB_name);
       const cardsCol = database.collection(collections);
@@ -92,6 +95,7 @@ function MyMongoDB() {
 
   myDB.updateCard = async (currentUser, id, card) => {
     const client = new MongoClient(url);
+    client.connect();
     try {
       client.connect();
       const database = client.db(DB_name);

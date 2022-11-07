@@ -1,16 +1,19 @@
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config({ path: "./config/config.env" });
+require("dotenv").config();
+const DB_USER = process.env.MY_DB_USERNAME;
+const DB_PASSWORD = process.env.MY_DB_PASSWORD;
 function MyMongoDB() {
   const myDB = {};
-  const url =
-    "mongodb+srv://jason:1234@cluster0.g3bcu3h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  const url = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster0.g3bcu3h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
   const DB_NAME = "businessCardDB";
   const USER_COLLECTION = "users";
 
   //Chun-Wei Tseng
   myDB.authenticate = async (user) => {
     let client;
+
     try {
       
       client = new MongoClient(url);
@@ -36,6 +39,7 @@ function MyMongoDB() {
 
   myDB.createUser = async (user) => {
     let client = new MongoClient(url);
+    client.connect();
     try {
       client.connect();
       const db = client.db(DB_NAME);
