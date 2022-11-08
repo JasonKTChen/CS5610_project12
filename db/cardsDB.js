@@ -1,14 +1,12 @@
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config({ path: "./config/config.env" });
+require("dotenv").config();
+const DB_USER = process.env.MY_DB_USERNAME;
+const DB_PASSWORD = process.env.MY_DB_PASSWORD;
 function MyMongoDB() {
   const myDB = {};
-  const url =
-//   CODE_REVIEW: as mentioned in class, it is not a good idea to leave username and password to database in code.
-//   It gives the hackers the chance to use crawlers to get your credentials and cause harm to your system.
-//   You can use heroku's credential configuration system to save your credentials securely.
-    "mongodb+srv://jason:1234@cluster0.g3bcu3h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
+  const url = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster0.g3bcu3h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
   const DB_name = "businessCardDB";
   const collections = "cards";
 
@@ -114,14 +112,7 @@ function MyMongoDB() {
         },
         { upsert: true }
       );
-      // cardsCol.updateOne(
-      //   query,
-      //   {
-      //     $rename: { [`cards.${key}`]: card.cardname },
-      //   },
-      //   false,
-      //   true
-      // );
+
       const ncardUser = await cardsCol.findOne(query);
       console.log("new card", ncardUser);
       return true;
