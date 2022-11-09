@@ -1,8 +1,12 @@
 # CS5610_project2
 CS5610 Project 2 - E-Business Card   
 Author: Chun-We Tseng, Kuan-Tsa Chen   
-Link to Home Page: https://ebusinesscard.herokuapp.com/?fbclid=IwAR3bHnEouHaaj2g43lRoxOc5ipkwHoI2nKth-Fry7oTWuqXh9HTNYkJMt0U
-Class Link: https://johnguerra.co/classes/webDevelopment_fall_2022/
+
+Link to Home Page: https://ebusinesscard.herokuapp.com/?fbclid=IwAR3bHnEouHaaj2g43lRoxOc5ipkwHoI2nKth-Fry7oTWuqXh9HTNYkJMt0U   
+
+Class Link: https://johnguerra.co/classes/webDevelopment_fall_2022/      
+
+Design Document: https://docs.google.com/document/d/1WxKZntCQ8J6W_zeH8grvGeUeljiUGBN3fDtHwK-2DJE/edit#     
 
 ### Background
 
