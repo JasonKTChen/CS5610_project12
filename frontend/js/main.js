@@ -1,3 +1,4 @@
+// Kuan-Tsa Chen
 function MyWalletModule() {
   const msgDiv = document.querySelector("div#message");
 

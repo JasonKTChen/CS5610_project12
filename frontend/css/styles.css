@@ -1,14 +1,18 @@
-body{
+/* Kuan-Tsa Chen */
+body {
     padding: 5% 10%;
 }
-.container{
+
+.container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.card{
+
+.card {
     width: 18rem;
     margin: 1rem;
 }
-div#message{
+
+div#message {
     display: none;
 }

@@ -1,3 +1,4 @@
+//Chun-Wei Tseng
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config({ path: "./config/config.env" });
@@ -10,12 +11,10 @@ function MyMongoDB() {
   const DB_NAME = "businessCardDB";
   const USER_COLLECTION = "users";
 
-  //Chun-Wei Tseng
   myDB.authenticate = async (user) => {
     let client;
 
     try {
-      
       client = new MongoClient(url);
       client.connect();
       const db = client.db(DB_NAME);
@@ -73,7 +72,6 @@ function MyMongoDB() {
   myDB.getUser = async (_email) => {
     let client;
     try {
-      
       client = new MongoClient(url);
       client.connect();
       const db = client.db(DB_NAME);

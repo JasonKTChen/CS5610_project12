@@ -1,7 +1,7 @@
+// Kuan-Tsa Chen
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config({ path: "./config/config.env" });
-require("dotenv").config();
 const DB_USER = process.env.MY_DB_USERNAME;
 const DB_PASSWORD = process.env.MY_DB_PASSWORD;
 function MyMongoDB() {
